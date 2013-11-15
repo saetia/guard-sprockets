@@ -32,7 +32,7 @@ module Guard
         end
         begin
           require 'sass-rails'
-          @sprockets.css_compressor = ::Sass::Rails::CssCompressor.new
+
           UI.info 'Sprockets will compress css output.'
         rescue LoadError => ex
           UI.error "minify: Css compressor cannot be loaded. No compression will be used.\nPlease include 'sass-rails' in your Gemfile."
